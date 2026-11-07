@@ -21,7 +21,7 @@ Repères (estimations, hors marche au départ) :
 - **L18 vers l'ouest** : Palaiseau ~5 min, Orsay-Gif ~10 min, CEA Saint-Aubin ~13 min, Saint-Quentin Est ~20 min, Versailles Chantiers ~26 min.
 - **L18 Massy Opéra → Antonypôle** : 1 station, ~2 min.
 
-Méthode : prendre l'itinéraire le plus rapide (souvent L18 + L14 pour Paris centre et rive droite ; L18 + RER B pour Paris sud et nord, La Défense via Châtelet + RER A ; L18 direct pour Saclay, Versailles et Orly). Compter **+5 min par correspondance** et la marche jusqu'au bureau à l'arrivée. Arrondir à 5 min. Indiquer l'itinéraire en abrégé entre parenthèses : « (L18 + L14) », « (L18 + RER B) », « (L18 direct) », « (à pied) » si le bureau est à Massy.
+Méthode : prendre l'itinéraire le plus rapide (souvent L18 + L14 pour Paris centre et rive droite ; L18 + RER B pour Paris sud et nord, La Défense via Châtelet + RER A ; L18 direct pour Saclay, Versailles et Orly). Compter **+5 min par correspondance** et la marche jusqu'au bureau à l'arrivée. Arrondir à 5 min. Dans le message, écrire UNIQUEMENT « ~X min de Massy » (pas d'itinéraire, pas de « Massy Opéra »).
 
 ## 3. Postes ciblés / exclus
 - **Cibles** : Responsable CRM, CRM Manager, Lifecycle / CRM Marketing Manager, Chef de projet CRM (marketing), Consultant(e) CRM / Data CRM / MarTech (cabinet ou agence acceptés), Responsable / Manager Affiliation, Affiliate Manager, Partnerships Manager orienté affiliation, Responsable Marketing Digital orienté CRM/acquisition, Growth/Retention Manager avec forte dimension CRM, Head of CRM (petites structures), Marketing Automation Manager, Responsable Emailing / Email Marketing Manager.
@@ -89,7 +89,7 @@ WhatsApp transforme automatiquement en liens soulignés tout ce qui ressemble à
 *①  [Intitulé exact du poste]*
 🏢  _[Entreprise]_ (— groupe / client final via cabinet si utile)
 📍  [Ville / arrondissement] · [hybride X j par semaine confirmé / full remote France / télétravail partiel confirmé]
-🚆  ~[X] min depuis Massy Opéra ([itinéraire court, ex. L18 + L14]) — calcul selon la section 2 bis ; « full remote » si 100 % télétravail
+🚆  ~[X] min de Massy   ← exactement ce libellé, sans itinéraire (calcul depuis Massy Opéra selon la section 2 bis) ; « full remote » si 100 % télétravail
 💰  [45 à 50 k€ · annoncé  OU  ~48 à 53 k€ · estimé]
 🎓  [X à Y ans demandés / « confirmé, sans durée précisée »]
 ⭐  Match [XX] % · Qualité [XX] sur 20
