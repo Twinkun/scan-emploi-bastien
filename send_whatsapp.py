@@ -49,7 +49,7 @@ def main():
     ok = True
     for n, part in enumerate(parts, 1):
         if len(parts) > 1:
-            part = f"({n}/{len(parts)})\n" + part
+            part = f"Partie {n} sur {len(parts)}\n" + part  # pas de "1/2" : WhatsApp le souligne
         resp = send(phone, apikey, part)
         low = resp.lower()
         if "error" in low or "paused" in low or "invalid" in low:

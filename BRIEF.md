@@ -3,7 +3,7 @@
 ## 1. Objectif
 Trouver les **nouvelles** offres d'emploi réelles et pertinentes pour Bastien, les scorer, estimer le salaire quand il est absent, et envoyer **un message WhatsApp** au format exact de la section 7.
 Fenêtre : offres publiées (ou encore actives et jamais envoyées) depuis le **dernier scan** (≈ 2-3 jours ; jusqu'à 7 jours pour une offre encore active jamais signalée).
-**Maximum 6 offres**, classées par note décroissante. Mieux vaut 2 vraies pépites que 6 offres moyennes. **Ne JAMAIS inventer** une offre, une entreprise, un lien ou un salaire « annoncé ».
+**Maximum 5 offres**, classées par note décroissante. Mieux vaut 2 vraies pépites que 5 offres moyennes. **Ne JAMAIS inventer** une offre, une entreprise, un lien ou un salaire « annoncé ».
 
 ## 2. Profil de Bastien (pour le scoring)
 - 6 ans de marketing digital data-driven. Domicile : **Massy (91)**. Anglais professionnel. MSc Marketing Digital INSEEC.
@@ -47,42 +47,59 @@ Si une page bloque (403, captcha, JS), basculer sur des recherches web ciblées 
 5. Scorer :
    - **Match profil (%)** : missions/outils/niveau/secteur/lieu (proximité Massy appréciée) vs profil.
    - **Qualité offre (/20)** : clarté de l'annonce, salaire, télétravail, solidité/notoriété de l'entreprise, fraîcheur, intérêt du périmètre.
-6. Sélectionner ≤ 6 offres, triées par qualité/match.
+6. Sélectionner ≤ 5 offres, triées par qualité/match.
 
 ## 6. Salaire
-- **Annoncé dans l'offre** → le reprendre tel quel, entre astérisques WhatsApp pour le gras : `*45–50 k€*`.
-- **Non annoncé** → **estimer une fourchette serrée (≈ 4-6 k€ d'amplitude)**, notée `~48–53 k€ (estimé)`. Faire une vraie recherche : chercher les fourchettes publiées pour des postes équivalents (même intitulé, même type d'entreprise, IDF) sur Glassdoor, WTTJ, APEC, Indeed salaires, études Hays/Robert Walters/Michael Page, et les offres similaires de la même entreprise. Pondérer selon : séniorité exigée, taille/secteur de l'entreprise (luxe, banque, SaaS, conseil, grands groupes = haut ; asso, petites PME = bas), localisation, périmètre (management, international, stack).
-- Repères de départ Paris/IDF : Chef de projet CRM 42–50 k€ · Responsable CRM / CRM Manager 47–56 k€ · Consultant CRM confirmé 45–55 k€ · Consultant senior 55–65 k€ · Senior/Lead/Head of CRM 58–70 k€ · Affiliate Manager 42–50 k€ · Responsable Marketing Digital 46–55 k€.
+- **Annoncé dans l'offre** → le reprendre tel quel, suivi de ` · annoncé` : `💰  45 à 50 k€ · annoncé`.
+- **Non annoncé** → **estimer une fourchette serrée (≈ 4-6 k€ d'amplitude)** : `💰  ~48 à 53 k€ · estimé`. Faire une vraie recherche : fourchettes publiées pour des postes équivalents (même intitulé, même type d'entreprise, IDF) sur Glassdoor, WTTJ, APEC, Indeed salaires, études Hays/Robert Walters/Michael Page, offres similaires de la même entreprise. Pondérer selon : séniorité exigée, taille/secteur (luxe, banque, SaaS, conseil, grands groupes = haut ; asso, petites PME = bas), localisation, périmètre (management, international, stack).
+- Repères de départ Paris/IDF : Chef de projet CRM 42 à 50 k€ · Responsable CRM / CRM Manager 47 à 56 k€ · Consultant CRM confirmé 45 à 55 k€ · Consultant senior 55 à 65 k€ · Senior/Lead/Head of CRM 58 à 70 k€ · Affiliate Manager 42 à 50 k€ · Responsable Marketing Digital 46 à 55 k€.
 - Seulement si vraiment aucune base fiable : `non communiqué`.
 
 ## 7. Format du message WhatsApp (à respecter EXACTEMENT)
-Date en français (ex. « lundi 9 novembre 2026 »). Numéros ① ② ③ ④ ⑤ ⑥. Deux espaces après chaque emoji. Pas de Markdown autre que `*gras*` pour un salaire réellement annoncé.
 
+### Règles anti-soulignement (IMPORTANT)
+WhatsApp transforme automatiquement en liens soulignés tout ce qui ressemble à une date ou un numéro. Donc :
+- **Jamais d'année** dans les dates (« samedi 7 novembre », « publiée le 21 octobre »).
+- **Jamais de tiret entre deux nombres** : écrire « 45 à 50 k€ », « 3 à 5 ans », jamais « 45–50 » ni « 3-5 ».
+- **Jamais de slash entre deux nombres** : « 18 sur 20 », jamais « 18/20 ».
+- Pas de dates numériques (« 21/10 ») ni de numéros de téléphone.
+
+### Mise en forme WhatsApp
+- Intitulé du poste en **gras** : `*①  Intitulé*`.
+- Entreprise et fraîcheur en _italique_ : `_Onoff_`.
+- Lignes ✅ / ⚠️ en citation (commencent par `> `).
+- Deux espaces après chaque emoji. Numéros ① ② ③ ④ ⑤.
+
+### Modèle
 ```
-☀️  SCAN EMPLOI — [jour date]
+☀️  SCAN EMPLOI — [jour JJ mois, sans année]
 📋  [N] offre(s) · CRM / Affiliation · Paris & IDF
 ━━━━━━━━━━━━━━━━━━━━━━
-①  [Intitulé exact du poste]
-🏢  [Entreprise] (— [groupe / client final via cabinet] si utile)
-📍  [Ville / arrondissement] · [télétravail : hybride X j/sem confirmé / full remote France / télétravail partiel confirmé]
-💰  [*fourchette annoncée*  OU  ~XX–YY k€ (estimé)]
-⭐  Match profil : XX % · Qualité offre : XX/20
-🕒  [publiée il y a X heures / le JJ mois / annonce active aujourd'hui — toujours active]
-💡  [2 phrases : pourquoi c'est pertinent pour Bastien (missions/outils qui collent à son expérience) + point de vigilance éventuel]
+*①  [Intitulé exact du poste]*
+🏢  _[Entreprise]_ (— groupe / client final via cabinet si utile)
+📍  [Ville / arrondissement] · [hybride X j par semaine confirmé / full remote France / télétravail partiel confirmé]
+🚆  ~[X] min depuis Massy (transports en commun, estimation réaliste ; « full remote » si 100 % télétravail)
+💰  [45 à 50 k€ · annoncé  OU  ~48 à 53 k€ · estimé]
+🎓  [X à Y ans demandés / « confirmé, sans durée précisée »]
+⭐  Match [XX] % · Qualité [XX] sur 20
+🕒  _[publiée il y a X heures / publiée le JJ mois / active aujourd’hui]_
+> ✅ [1 phrase courte : ce qui colle à l'expérience de Bastien — missions, outils]
+> ⚠️ [1 phrase courte : le point de vigilance — niveau, côté cabinet, outil absent, trajet…]
 🔗  [URL directe de l'offre]
 ──────────────────────
-②  ...
+*②  ...*
 ━━━━━━━━━━━━━━━━━━━━━━
-🔎  Plateformes productrices : [liste des plateformes d'où viennent les offres retenues]
-💬  [1-2 phrases : salaires annoncés vs estimés ; ce qui a été écarté (déjà envoyées, sans télétravail confirmé, CDD/freelance, hors CRM marketing…)]
+🔎  _[Plateformes productrices, séparées par ·]_
+💬  _[1 seule ligne : ce qui a été écarté et pourquoi]_
 Bon courage Bastien ! 💪
 ```
+Viser **moins de 3 000 caractères** au total (sinon le message part en plusieurs parties) : phrases ✅/⚠️ courtes.
 
 Aucune nouvelle offre pertinente :
 ```
-🔍  SCAN EMPLOI — [jour date]
+🔍  SCAN EMPLOI — [jour JJ mois]
 RAS : aucune nouvelle offre pertinente depuis le dernier scan.
-🔎  [N] plateformes scannées · [raison principale des exclusions]
+🔎  _[N] plateformes scannées · [raison principale des exclusions]_
 Bon courage Bastien ! 💪
 ```
 
