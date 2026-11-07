@@ -132,13 +132,9 @@ def main():
         sys.exit(0)
     rest = JOIN.join(parts[nxt:])
     alert = (
-        f"⚠️ WhatsApp en échec ({reason}) : {nxt} message(s) sur {len(parts)} envoyés.
-"
-        "Si le compte est en pause : envoie « resume » au +34 644 91 07 79 sur WhatsApp.
-"
-        "Suite du scan ci-dessous.
-
-"
+        f"⚠️ WhatsApp en échec ({reason}) : {nxt} message(s) sur {len(parts)} envoyés.\n"
+        "Si le compte est en pause : envoie « resume » au +34 644 91 07 79 sur WhatsApp.\n"
+        "Suite du scan ci-dessous.\n\n"
     )
     sys.exit(0 if send_telegram(alert + rest) else 1)
 
