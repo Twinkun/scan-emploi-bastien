@@ -91,7 +91,7 @@ WhatsApp transforme automatiquement en liens soulignés tout ce qui ressemble à
 📍  [Ville / arrondissement] · [hybride X j par semaine confirmé / full remote France / télétravail partiel confirmé]
 🚆  ~[X] min de Massy   ← exactement ce libellé, sans itinéraire (calcul depuis Massy Opéra selon la section 2 bis) ; « full remote » si 100 % télétravail
 💰  [45 à 50 k€ · annoncé  OU  ~48 à 53 k€ · estimé]
-🎓  [X à Y ans demandés / « confirmé, sans durée précisée »]
+💼  [X à Y ans demandés / « confirmé, sans durée précisée »]
 ⭐  Match [XX] % · Qualité [XX] sur 20
 🕒  _[publiée il y a X heures / publiée le JJ mois / active aujourd’hui]_
 > ✅ [1 phrase courte : ce qui colle à l'expérience de Bastien — missions, outils]
