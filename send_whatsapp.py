@@ -44,6 +44,7 @@ def main():
     phone = os.environ["CALLMEBOT_PHONE"]
     apikey = os.environ["CALLMEBOT_APIKEY"]
     text = open(sys.argv[1], encoding="utf-8").read().strip()
+    text = text.replace("'", "’")  # CallMeBot supprime les apostrophes droites
     parts = chunks(text)
     ok = True
     for n, part in enumerate(parts, 1):
