@@ -72,6 +72,9 @@ def send(phone: str, apikey: str, text: str) -> str:
 
 def send_whatsapp_parts(parts, start: int = 0):
     """Envoie parts[start:]. Renvoie (ok, raison, index du premier morceau non envoyé)."""
+    if os.environ.get("SIMULATE_WHATSAPP_FAIL"):  # test du plan B Telegram
+        print("SIMULATION : échec WhatsApp forcé")
+        return False, "simulation d’échec", start
     phone = os.environ["CALLMEBOT_PHONE"]
     apikey = os.environ["CALLMEBOT_APIKEY"]
     for n in range(start, len(parts)):
@@ -101,16 +104,22 @@ def send_telegram(text: str) -> bool:
     # Telegram : 4096 caractères max par message, texte brut
     pieces = [text[i:i + 4000] for i in range(0, len(text), 4000)]
     for p in pieces:
-        data = urllib.parse.urlencode({
-            "chat_id": chat_id, "text": p, "disable_web_page_preview": "true",
-        }).encode()
-        try:
-            with urllib.request.urlopen(
-                f"https://api.telegram.org/bot{token}/sendMessage", data=data, timeout=60
-            ) as r:
-                resp = r.read().decode("utf-8", "replace")
-        except Exception as e:
-            resp = f"error: {e}"
+        # D'abord en Markdown (rend *gras* et _italique_ comme WhatsApp),
+        # puis en texte brut si Telegram refuse (ex. « _ » dans une URL).
+        for mode in ("Markdown", None):
+            fields = {"chat_id": chat_id, "text": p, "disable_web_page_preview": "true"}
+            if mode:
+                fields["parse_mode"] = mode
+            data = urllib.parse.urlencode(fields).encode()
+            try:
+                with urllib.request.urlopen(
+                    f"https://api.telegram.org/bot{token}/sendMessage", data=data, timeout=60
+                ) as r:
+                    resp = r.read().decode("utf-8", "replace")
+            except Exception as e:
+                resp = f"error: {e}"
+            if '"ok":true' in resp:
+                break
         if '"ok":true' not in resp:
             ok = False
             print(f"ECHEC Telegram : {resp[:300]}")
