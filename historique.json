@@ -1,1 +1,34 @@
-[]
+[
+  {
+    "date_envoi": "2026-11-07",
+    "titre": "CRM Manager",
+    "entreprise": "mym",
+    "url": "https://fr.linkedin.com/jobs/view/crm-manager-at-mym-4487727616",
+    "match": 90,
+    "note": 16
+  },
+  {
+    "date_envoi": "2026-11-07",
+    "titre": "Responsable Content Marketing, CRM & Conversion International",
+    "entreprise": "Crédit Agricole",
+    "url": "https://www.welcometothejungle.com/fr/companies/groupe-credit-agricole/jobs/responsable-content-marketing-crm-conversion-international-h-f_massy",
+    "match": 84,
+    "note": 16
+  },
+  {
+    "date_envoi": "2026-11-07",
+    "titre": "Responsable CRM, Marketing Automation et Fidélité (Ubigi)",
+    "entreprise": "Transatel",
+    "url": "https://fr.linkedin.com/jobs/view/responsable-crm-marketing-automation-et-fid%C3%A9lit%C3%A9-pour-ubigi-h-f-at-transatel-an-ntt-company-4426485896",
+    "match": 86,
+    "note": 15
+  },
+  {
+    "date_envoi": "2026-11-07",
+    "titre": "CRM Manager",
+    "entreprise": "Ornikar",
+    "url": "https://www.welcometothejungle.com/fr/companies/ornikar/jobs/crm-manager_paris_ORNIK_ddGjV8r",
+    "match": 80,
+    "note": 15
+  }
+]
