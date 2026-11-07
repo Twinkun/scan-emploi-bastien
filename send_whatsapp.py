@@ -3,34 +3,64 @@
 
 Usage : python3 send_whatsapp.py message.txt
 Variables d'env requises : CALLMEBOT_PHONE, CALLMEBOT_APIKEY
-Si le message dépasse MAX_CHARS, il est découpé proprement sur les séparateurs
-entre offres (ligne "──────") et envoyé en plusieurs parties.
+CallMeBot TRONQUE silencieusement au-delà d'environ 740 caractères (testé le
+7 novembre 2026). Le message est donc découpé sur les lignes séparatrices
+(━━━ / ───) : en-tête, une offre par message, pied. Les morceaux trop longs
+sont recoupés ligne par ligne ; les petits morceaux voisins sont regroupés.
 """
 import os
+import re
 import sys
 import time
 import urllib.parse
 import urllib.request
 
-MAX_CHARS = 3000
-SEP = "──────────────────────"
+MAX_CHARS = 650  # marge sous la limite CallMeBot (~740)
+SEP_RE = re.compile(r"^\s*[━─]{5,}\s*$")
+JOIN = "\n──────────────────────\n"
+
+
+def _split_long(seg: str):
+    out, cur = [], ""
+    for line in seg.split("\n"):
+        while len(line) > MAX_CHARS:  # ligne énorme : coupe brute
+            if cur:
+                out.append(cur)
+                cur = ""
+            out.append(line[:MAX_CHARS])
+            line = line[MAX_CHARS:]
+        cand = f"{cur}\n{line}" if cur else line
+        if len(cand) > MAX_CHARS:
+            out.append(cur)
+            cur = line
+        else:
+            cur = cand
+    if cur.strip():
+        out.append(cur)
+    return out
 
 
 def chunks(text: str):
-    if len(text) <= MAX_CHARS:
-        return [text]
-    blocks = text.split(SEP)
-    out, cur = [], ""
-    for i, b in enumerate(blocks):
-        piece = b if i == 0 else SEP + b
-        if cur and len(cur) + len(piece) > MAX_CHARS:
-            out.append(cur.strip())
-            cur = b.lstrip("\n")  # nouvelle partie : pas de séparateur en tête
+    segs, cur = [], []
+    for line in text.split("\n"):
+        if SEP_RE.match(line):
+            if "\n".join(cur).strip():
+                segs.append("\n".join(cur).strip())
+            cur = []
         else:
-            cur += piece
-    if cur.strip():
-        out.append(cur.strip())
-    return out
+            cur.append(line)
+    if "\n".join(cur).strip():
+        segs.append("\n".join(cur).strip())
+    pieces = []
+    for s in segs:
+        pieces.extend(_split_long(s) if len(s) > MAX_CHARS else [s])
+    merged = []
+    for p in pieces:
+        if merged and len(merged[-1]) + len(JOIN) + len(p) <= MAX_CHARS:
+            merged[-1] = merged[-1] + JOIN + p
+        else:
+            merged.append(p)
+    return merged
 
 
 def send(phone: str, apikey: str, text: str) -> str:
@@ -40,13 +70,12 @@ def send(phone: str, apikey: str, text: str) -> str:
         return r.read().decode("utf-8", "replace")
 
 
-def send_whatsapp_all(text: str) -> tuple[bool, str]:
+def send_whatsapp_parts(parts, start: int = 0):
+    """Envoie parts[start:]. Renvoie (ok, raison, index du premier morceau non envoyé)."""
     phone = os.environ["CALLMEBOT_PHONE"]
     apikey = os.environ["CALLMEBOT_APIKEY"]
-    parts = chunks(text)
-    for n, part in enumerate(parts, 1):
-        if len(parts) > 1:
-            part = f"Partie {n} sur {len(parts)}\n" + part  # pas de "1/2" : WhatsApp le souligne
+    for n in range(start, len(parts)):
+        part = parts[n]
         try:
             resp = send(phone, apikey, part)
         except Exception as e:  # réseau, timeout…
@@ -54,12 +83,12 @@ def send_whatsapp_all(text: str) -> tuple[bool, str]:
         low = resp.lower()
         if "error" in low or "paused" in low or "invalid" in low:
             reason = "compte en pause" if "paused" in low else resp[:200]
-            print(f"ECHEC WhatsApp partie {n}: {resp[:500]}")
-            return False, reason
-        print(f"OK WhatsApp partie {n}/{len(parts)} ({len(part)} caractères)")
-        if n < len(parts):
-            time.sleep(12)  # CallMeBot limite le débit
-    return True, ""
+            print(f"ECHEC WhatsApp partie {n + 1}: {resp[:500]}")
+            return False, reason, n
+        print(f"OK WhatsApp partie {n + 1} sur {len(parts)} ({len(part)} caractères)")
+        if n < len(parts) - 1:
+            time.sleep(8)  # CallMeBot limite le débit ; garde l’ordre des messages
+    return True, "", len(parts)
 
 
 def send_telegram(text: str) -> bool:
@@ -93,18 +122,25 @@ def send_telegram(text: str) -> bool:
 def main():
     text = open(sys.argv[1], encoding="utf-8").read().strip()
     text = text.replace("'", "’")  # CallMeBot supprime les apostrophes droites
-    ok, reason = send_whatsapp_all(text)
+    parts = chunks(text)
+    ok, reason, nxt = send_whatsapp_parts(parts)
     if not ok:
         time.sleep(30)
-        print("Nouvel essai WhatsApp…")
-        ok, reason = send_whatsapp_all(text)
+        print("Nouvel essai WhatsApp (à partir du morceau en échec)…")
+        ok, reason, nxt = send_whatsapp_parts(parts, nxt)
     if ok:
         sys.exit(0)
+    rest = JOIN.join(parts[nxt:])
     alert = (
-        f"⚠️ WhatsApp en échec ({reason}).\n"
-        "Si le compte est en pause : envoie « resume » au +34 644 91 07 79 sur WhatsApp.\n\n"
+        f"⚠️ WhatsApp en échec ({reason}) : {nxt} message(s) sur {len(parts)} envoyés.
+"
+        "Si le compte est en pause : envoie « resume » au +34 644 91 07 79 sur WhatsApp.
+"
+        "Suite du scan ci-dessous.
+
+"
     )
-    sys.exit(0 if send_telegram(alert + text) else 1)
+    sys.exit(0 if send_telegram(alert + rest) else 1)
 
 
 if __name__ == "__main__":

@@ -93,7 +93,7 @@ WhatsApp transforme automatiquement en liens soulignés tout ce qui ressemble à
 💬  _[1 seule ligne : ce qui a été écarté et pourquoi]_
 Bon courage Bastien ! 💪
 ```
-Viser **moins de 3 000 caractères** au total (sinon le message part en plusieurs parties) : phrases ✅/⚠️ courtes.
+**Chaque bloc d’offre doit faire MOINS DE 600 caractères** (CallMeBot coupe au-delà d’environ 740 ; le script envoie l’en-tête, puis un message WhatsApp par offre, puis le pied). Phrases ✅/⚠️ courtes, compagnie entre parenthèses courte. Garder les lignes séparatrices ━━━ et ─── : le script s’en sert pour découper.
 
 Aucune nouvelle offre pertinente :
 ```
