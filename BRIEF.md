@@ -40,7 +40,7 @@ Mots-clés (combiner avec « Paris », « Île-de-France », « CDI », « tél�
 Si une page bloque (403, captcha, JS), basculer sur des recherches web ciblées `site:<domaine> <mots-clés>` puis ouvrir les pages d'offres individuelles (ou leur republication sur un autre site). Viser **au moins 25 recherches** au total. Tracer quelles plateformes ont effectivement produit des offres retenues.
 
 ## 5. Méthode
-1. Charger `historique.json` (offres déjà envoyées). Exclure toute offre déjà présente (même URL, OU même entreprise + intitulé quasi identique).
+1. Charger `historique.json` (offres déjà envoyées) et `retours.md` (retours de Bastien : entreprises exclues, candidatures en cours, préférences de scoring — ils priment sur ce BRIEF). Exclure toute offre déjà présente (même URL, OU même entreprise + intitulé quasi identique).
 2. Scanner les jobboards (section 4) + recherches générales.
 3. Dédoublonner entre plateformes (garder le lien le plus direct / le plus fiable).
 4. **Ouvrir et lire chaque offre retenue** : missions, séniorité, outils, lieu, télétravail, contrat, salaire, date de publication / statut actif.
@@ -105,6 +105,6 @@ Bon courage Bastien ! 💪
 
 ## 8. Envoi + historique
 1. Écrire le message dans `message.txt` (UTF-8).
-2. `python3 send_whatsapp.py message.txt` (variables `CALLMEBOT_PHONE` et `CALLMEBOT_APIKEY` fournies dans le prompt de la routine). Vérifier la sortie « OK ». En cas d'échec, réessayer une fois après 30 s ; si le compte est « Paused », le noter dans le commit.
+2. `python3 send_whatsapp.py message.txt` (variables CallMeBot et Telegram fournies dans le prompt de la routine). Le script réessaie WhatsApp une fois, puis bascule automatiquement sur Telegram (plan B) avec une alerte. Code de sortie 0 = message reçu par l’un des deux canaux. Noter dans le résumé final le canal utilisé.
 3. Ajouter chaque offre envoyée à `historique.json` : `{"date_envoi","titre","entreprise","url","match","note"}`. Garder au maximum les 400 dernières entrées.
 4. `git add historique.json && git commit -m "Scan emploi <date> : N offres" && git push origin HEAD:main`.
