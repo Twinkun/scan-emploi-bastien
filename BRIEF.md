@@ -6,11 +6,22 @@ Fenêtre : offres publiées (ou encore actives et jamais envoyées) depuis le **
 **Maximum 5 offres**, classées par note décroissante. Mieux vaut 2 vraies pépites que 5 offres moyennes. **Ne JAMAIS inventer** une offre, une entreprise, un lien ou un salaire « annoncé ».
 
 ## 2. Profil de Bastien (pour le scoring)
-- 6 ans de marketing digital data-driven. Domicile : **Massy (91)**. Anglais professionnel. MSc Marketing Digital INSEEC.
+- 6 ans de marketing digital data-driven. Domicile (futur logement) : **Massy (91)**, gare de référence **Massy Opéra** (ligne 18). Voir section 2 bis pour les temps de trajet. Anglais professionnel. MSc Marketing Digital INSEEC.
 - **Actuel (depuis janv. 2025) — Responsable Affiliation & CRM, Edilead** (lead gen, Antony 92) : base propriétaire 5 M contacts B2C/B2B, segmentation SQL, scoring, RGPD ; campagnes email/SMS/RCS (Brevo, Link Mobility, Capitole Mobile) > 100 k€ CA/mois (1,2 M€/an), 40 k€ ROI net/mois ; A/B tests ; marketing automation (nurturing, relance, réactivation, lifecycle) ; réseau d'affiliés éditeurs ; management d'un alternant ; IA appliquée aux process CRM (Claude Code).
 - **Companeo 2021-2024 — Chef de projet Emailing** : Salesforce Marketing Cloud, emailing 15 pays, triggers, segmentations dynamiques, pression marketing, délivrabilité, leadgen B2B ROI.
 - **Companeo 2020-2021 — Chef de projet Digital SEA** : Google Ads / Bing Ads 3 marchés.
 - **Outils** : Brevo, Salesforce Marketing Cloud, HubSpot (certifié), Link Mobility, Capitole Mobile, Power BI, GA4, GTM, SQL, HTML/CSS.
+
+## 2 bis. Temps de trajet — départ Massy Opéra (ligne 18 considérée comme OUVERTE)
+Point de départ : gare **Massy Opéra** (ligne 18 du Grand Paris Express), à côté du futur logement de Bastien. **Hypothèse imposée : la ligne 18 fonctionne déjà** (même si ce n'est pas encore le cas). La ligne 15 n'est PAS considérée comme ouverte.
+
+Repères (estimations, hors marche au départ) :
+- **L18 Massy Opéra → Massy-Palaiseau** : 1 station, ~2 min → RER B (Denfert, Châtelet, Gare du Nord, CDG) ou RER C (ouest/sud-ouest).
+- **L18 Massy Opéra → Aéroport d'Orly** : ~7 min → **ligne 14** vers Paris : Olympiades ~15 min, Gare de Lyon ~21 min, Châtelet ~24 min, Madeleine / Saint-Lazare ~28 min, Saint-Denis Pleyel ~38 min (temps depuis Orly).
+- **L18 vers l'ouest** : Palaiseau ~5 min, Orsay-Gif ~10 min, CEA Saint-Aubin ~13 min, Saint-Quentin Est ~20 min, Versailles Chantiers ~26 min.
+- **L18 Massy Opéra → Antonypôle** : 1 station, ~2 min.
+
+Méthode : prendre l'itinéraire le plus rapide (souvent L18 + L14 pour Paris centre et rive droite ; L18 + RER B pour Paris sud et nord, La Défense via Châtelet + RER A ; L18 direct pour Saclay, Versailles et Orly). Compter **+5 min par correspondance** et la marche jusqu'au bureau à l'arrivée. Arrondir à 5 min. Indiquer l'itinéraire en abrégé entre parenthèses : « (L18 + L14) », « (L18 + RER B) », « (L18 direct) », « (à pied) » si le bureau est à Massy.
 
 ## 3. Postes ciblés / exclus
 - **Cibles** : Responsable CRM, CRM Manager, Lifecycle / CRM Marketing Manager, Chef de projet CRM (marketing), Consultant(e) CRM / Data CRM / MarTech (cabinet ou agence acceptés), Responsable / Manager Affiliation, Affiliate Manager, Partnerships Manager orienté affiliation, Responsable Marketing Digital orienté CRM/acquisition, Growth/Retention Manager avec forte dimension CRM, Head of CRM (petites structures), Marketing Automation Manager, Responsable Emailing / Email Marketing Manager.
@@ -45,7 +56,7 @@ Si une page bloque (403, captcha, JS), basculer sur des recherches web ciblées 
 3. Dédoublonner entre plateformes (garder le lien le plus direct / le plus fiable).
 4. **Ouvrir et lire chaque offre retenue** : missions, séniorité, outils, lieu, télétravail, contrat, salaire, date de publication / statut actif.
 5. Scorer :
-   - **Match profil (%)** : missions/outils/niveau/secteur/lieu (proximité Massy appréciée) vs profil.
+   - **Match profil (%)** : missions/outils/niveau/secteur/lieu (trajet court depuis Massy Opéra apprécié, voir section 2 bis) vs profil.
    - **Qualité offre (/20)** : clarté de l'annonce, salaire, télétravail, solidité/notoriété de l'entreprise, fraîcheur, intérêt du périmètre.
 6. Sélectionner ≤ 5 offres, triées par qualité/match.
 
@@ -78,7 +89,7 @@ WhatsApp transforme automatiquement en liens soulignés tout ce qui ressemble à
 *①  [Intitulé exact du poste]*
 🏢  _[Entreprise]_ (— groupe / client final via cabinet si utile)
 📍  [Ville / arrondissement] · [hybride X j par semaine confirmé / full remote France / télétravail partiel confirmé]
-🚆  ~[X] min depuis Massy (transports en commun, estimation réaliste ; « full remote » si 100 % télétravail)
+🚆  ~[X] min depuis Massy Opéra ([itinéraire court, ex. L18 + L14]) — calcul selon la section 2 bis ; « full remote » si 100 % télétravail
 💰  [45 à 50 k€ · annoncé  OU  ~48 à 53 k€ · estimé]
 🎓  [X à Y ans demandés / « confirmé, sans durée précisée »]
 ⭐  Match [XX] % · Qualité [XX] sur 20
