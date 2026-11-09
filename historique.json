@@ -54,5 +54,45 @@
     "url": "https://www.hellowork.com/fr-fr/emplois/85138699.html",
     "match": 84,
     "note": 16
+  },
+  {
+    "date_envoi": "2026-11-09",
+    "titre": "Consultant Senior Marketing CRM",
+    "entreprise": "Epsilon France",
+    "url": "https://fr.linkedin.com/jobs/view/consultant-senior-marketing-crm-f-h-x-at-epsilon-france-4196425916",
+    "match": 85,
+    "note": 16
+  },
+  {
+    "date_envoi": "2026-11-09",
+    "titre": "Chef de projet CRM SFMC",
+    "entreprise": "Epsilon France",
+    "url": "https://fr.linkedin.com/jobs/view/chef-de-projet-crm-sfmc-f-h-x-at-epsilon-france-4487945032",
+    "match": 82,
+    "note": 16
+  },
+  {
+    "date_envoi": "2026-11-09",
+    "titre": "Responsable CRM / Groupe Média",
+    "entreprise": "Groupe média (anonyme)",
+    "url": "https://www.jobijoba.com/fr/annonce/54/9f68ba775ed0247cb6d278c2fb94d278",
+    "match": 80,
+    "note": 13
+  },
+  {
+    "date_envoi": "2026-11-09",
+    "titre": "Chef de projet CRM",
+    "entreprise": "CASDEN Banque Populaire",
+    "url": "https://fr.linkedin.com/jobs/view/chef-de-projet-crm-f-h-at-casden-banque-populaire-4468105374",
+    "match": 76,
+    "note": 14
+  },
+  {
+    "date_envoi": "2026-11-09",
+    "titre": "Chef de projet CRM B2B et Événementiel",
+    "entreprise": "Franprix",
+    "url": "https://www.hellowork.com/fr-fr/emplois/85100406.html",
+    "match": 70,
+    "note": 13
   }
 ]
