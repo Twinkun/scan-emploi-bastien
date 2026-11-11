@@ -94,5 +94,29 @@
     "url": "https://www.hellowork.com/fr-fr/emplois/85100406.html",
     "match": 70,
     "note": 13
+  },
+  {
+    "date_envoi": "2026-11-11",
+    "titre": "Senior CRM & Lifecycle Manager",
+    "entreprise": "Shadow",
+    "url": "https://www.welcometothejungle.com/en/companies/shadow/jobs/senior-crm-lifecycle-manager-h-f-x_paris",
+    "match": 90,
+    "note": 17
+  },
+  {
+    "date_envoi": "2026-11-11",
+    "titre": "CRM Spécialist (Recommerce)",
+    "entreprise": "leboncoin",
+    "url": "https://fr.linkedin.com/jobs/view/crm-sp%C3%A9cialist-n-f-h-at-leboncoin-4473240576",
+    "match": 82,
+    "note": 16
+  },
+  {
+    "date_envoi": "2026-11-11",
+    "titre": "Senior Affiliate Manager",
+    "entreprise": "Ledger",
+    "url": "https://fr.linkedin.com/jobs/view/senior-affiliate-manager-at-ledger-4478298692",
+    "match": 78,
+    "note": 15
   }
 ]
