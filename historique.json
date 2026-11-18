@@ -166,5 +166,37 @@
     "url": "https://www.hellowork.com/fr-fr/emplois/85452778.html",
     "match": 66,
     "note": 13
+  },
+  {
+    "date_envoi": "2026-11-18",
+    "titre": "Chef de Projet CRM - Compte Hyundai Motor France",
+    "entreprise": "INNOCEAN France",
+    "url": "https://www.hellowork.com/fr-fr/emplois/85607855.html",
+    "match": 85,
+    "note": 16
+  },
+  {
+    "date_envoi": "2026-11-18",
+    "titre": "Consultant Senior CRM & MarTech",
+    "entreprise": "Unnest",
+    "url": "https://fr.linkedin.com/jobs/view/cdi-consultant-senior-crm-martech-h-f-at-unnest-data-success-partners-4469469686",
+    "match": 80,
+    "note": 15
+  },
+  {
+    "date_envoi": "2026-11-18",
+    "titre": "Growth Manager",
+    "entreprise": "MOZAIK",
+    "url": "https://www.hellowork.com/fr-fr/emplois/85590257.html",
+    "match": 78,
+    "note": 16
+  },
+  {
+    "date_envoi": "2026-11-18",
+    "titre": "Manager CRM - Anglais",
+    "entreprise": "Groupe GR (cabinet d'avocats client)",
+    "url": "https://fr.linkedin.com/jobs/view/manager-crm-hf-anglais-at-groupe-gr-4488914974",
+    "match": 62,
+    "note": 13
   }
 ]
