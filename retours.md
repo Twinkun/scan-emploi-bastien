@@ -10,6 +10,8 @@
 <!-- - 2026-11-09 · Intitulé · Entreprise · statut (postulé / entretien / refus) -->
 - 2026-11-28 · Customer Marketing & CRM Manager · Bip&Go (groupe Sanef) · postulé (via HelloWork)
 - 2026-11-28 · Responsable CRM Cycle de vie HM · Carrefour (Massy) · postulé (site carrière Carrefour)
+- 2026-11-28 · CRM Manager · LegalPlace · postulé (site carrière Teamtailor)
+- 2026-11-28 · Lifecycle Marketing Manager · Alma · postulé (Greenhouse)
 
 ## Types de postes hors cible / à remonter
 <!-- - ex. : « Consultant en cabinet : moins intéressé, baisser le score de 10 points » -->
