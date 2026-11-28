@@ -13,6 +13,11 @@
 - 2026-11-28 · CRM Manager · LegalPlace · postulé (site carrière Teamtailor)
 - 2026-11-28 · Lifecycle Marketing Manager · Alma · postulé (Greenhouse)
 - 2026-11-28 · Senior CRM & Lifecycle Manager · Shadow · postulé (Welcome to the Jungle)
+- 2026-11-28 · CRM & Marketing Automation Manager - Salesforce · Culligan · postulé (HelloWork)
+- 2026-11-28 · Head of CRM & Retention · Cabaia · postulé (HelloWork)
+- 2026-11-28 · CRM Lifecycle Manager · Cafeyn · postulé (site carrière)
+- 2026-11-28 · Consultant Data CRM Senior Brevo · Elevate · offre fermée (ne plus proposer)
+- 2026-11-28 · CRM Manager · mym · offre fermée (ne plus proposer)
 
 ## Types de postes hors cible / à remonter
 <!-- - ex. : « Consultant en cabinet : moins intéressé, baisser le score de 10 points » -->
