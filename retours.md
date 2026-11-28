@@ -17,6 +17,7 @@
 - 2026-11-28 · Head of CRM & Retention · Cabaia · postulé (HelloWork)
 - 2026-11-28 · CRM Lifecycle Manager · Cafeyn · postulé (site carrière)
 - 2026-11-28 · Responsable Content Marketing, CRM & Conversion International · Crédit Agricole (Massy) · postulé (site carrière CA)
+- 2026-11-28 · CRM Marketing Specialist senior · BforBank · postulé (site carrière CA)
 - 2026-11-28 · Consultant Data CRM Senior Brevo · Elevate · offre fermée (ne plus proposer)
 - 2026-11-28 · CRM Manager · mym · offre fermée (ne plus proposer)
 
